@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paisano's Pizza</title>
+    <link rel="stylesheet" href="./assets/main.css" />
+  </head>
+  <body>
+    <h1>Make your own pie!</h1>
+    <!-- Toppings, etc -->
+    <div class="interface">
+      <div class="ingredients">
+        <h3>Ingredients</h3>
+        <!-- crust -->
+        <img
+          class="ingredient"
+          draggable="true"
+          src="./assets/Crust.svg"
+          alt="Crust"
+          id="crust"
+          ondragstart="drag(event)"
+          ondrop="drop(event)"
+          ondragover="allowDrop(event)"
+          style="z-index: 1"
+        />
+        <!-- sauce -->
+        <img
+          class="ingredient"
+          draggable="true"
+          src="./assets/Sauce.svg"
+          alt="Sauce"
+          id="sauce"
+          ondragstart="drag(event)"
+          ondrop="drop(event)"
+          ondragover="allowDrop(event)"
+          style="z-index: 2"
+        />
+        <!-- cheese -->
+        <img
+          class="ingredient"
+          draggable="true"
+          src="./assets/Cheese.svg"
+          alt="Cheese"
+          id="cheese"
+          ondragstart="drag(event)"
+          ondrop="drop(event)"
+          ondragover="allowDrop(event)"
+          style="z-index: 3"
+        />
+        <!-- Pepperoni -->
+        <img
+          class="ingredient"
+          draggable="true"
+          src="./assets/Pepp.svg"
+          alt="Pepperoni"
+          id="pepperoni"
+          ondragstart="drag(event)"
+          ondrop="drop(event)"
+          ondragover="allowDrop(event)"
+          style="z-index: 4"
+        />
+        <!-- Shrooms -->
+        <img
+          class="ingredient"
+          draggable="true"
+          src="./assets/Shrooms.svg"
+          alt="Shrooms"
+          id="shrooms"
+          ondragstart="drag(event)"
+          ondrop="drop(event)"
+          ondragover="allowDrop(event)"
+          style="z-index: 5"
+        />
+      </div>
+      <!-- Workstation -->
+      <div
+        class="workstation"
+        id="workstation"
+        ondrop="drop(event)"
+        ondragover="allowDrop(event)"
+      ></div>
+    </div>
+    <script src="./assets/main.js"></script>
+  </body>
+</html>
